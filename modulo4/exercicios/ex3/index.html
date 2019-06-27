@@ -35,7 +35,11 @@
       listElement.appendChild(errorElement);
     }
     function renderLoading(loading) {
-      
+        listElement.innerHTML = "";
+      var textElement = document.createTextNode('Carregando...');
+      var loadingElement = document.createElement('li');
+      loadingElement.appendChild(textElement);
+      listElement.appendChild(loadingElement);
     }
 
     </script>
