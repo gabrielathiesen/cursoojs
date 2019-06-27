@@ -15,7 +15,12 @@
     var inputElement = document.querySelector('input');
 
     function renderRepositories(repositories) {
-      
+        for (repo of repositories) {
+        const textElement = document.createTextNode(repo.name);
+        const liElement = document.createElement('li');
+        liElement.appendChild(textElement);
+        listElement.appendChild(liElement);
+      }
     }
     </script>
 </body>
