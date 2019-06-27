@@ -9,7 +9,16 @@
 <body>
     <script>
     function podeEntrarNaFesta(gen, idade) {
-       
+        switch (true) {
+            case (gen == "F" && idade >= 15):
+                return true
+            case (gen == "M" && idade > 25):
+                return true
+            case (idade > 35):
+                return false
+            default:
+                return false
+                break;
         }
     }
     
