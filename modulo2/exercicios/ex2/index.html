@@ -7,8 +7,28 @@
     <title>Document</title>
 </head>
 <body>
+        <button id="new">novo quadrado</button>
+
+        <div id="squares"></div>
     <script>
-    
+    var buttonElement = document.getElementById('new');
+    var squaresElement = document.getElementById('squares');
+   
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;}
+   
+    buttonElement.onclick = function () {
+        var square = document.createElement('div');
+        square.style.width = '100px';
+      square.style.height = '100px';
+      square.style.backgroundColor = '#E25';
+      squaresElement.appendChild(square);
+    };
     </script>
 </body>
 </html>
