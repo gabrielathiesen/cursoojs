@@ -28,6 +28,10 @@
       square.style.height = '100px';
       square.style.backgroundColor = '#E25';
       squaresElement.appendChild(square);
+      square.onmouseover = function () {
+        square.style.backgroundColor = getRandomColor();
+      }
+      squaresElement.appendChild(square);
     };
     </script>
 </body>
