@@ -4,21 +4,18 @@
     </head>
     <body>
         <div id="app">
-            <input id="nome" />
+            <input onkeypress="mostrarAlerta()"/>
+            <button class="botao">adicionar</button>
         </div>
         <script>
-      var linkElement = document.createElement("a");
-      linkElement.setAttribute("href", "http://rockseat.com.br");
-      linkElement.setAttribute("title", "site da rockseat");
+        var inputElement = document.querySelector("input[name=nome");
+        var btnElement = document.querySelector("button.botao");
 
-      textElement = document.createTextNode("acessar site da rockseat");
-      linkElement.appendChild(textElement);
+        btnElement.onclick = function(){
+            var text = inputElement.value;
 
-      var containerElement = document.querySelector("#app");
-      containerElement.appendChild(linkElement);
-
-      var inputElement = document.querySelector("#nome");
-      containerElement.removeChild(inputElement);
+            alert("botão clicado");
+        }
         
         </script>
     </body>

@@ -4,14 +4,21 @@
     </head>
     <body>
         <div id="app">
-            <div class="box"></div>
+            <input id="nome" />
         </div>
         <script>
-    var boxElement =document.querySelector(".box");
+      var linkElement = document.createElement("a");
+      linkElement.setAttribute("href", "http://rockseat.com.br");
+      linkElement.setAttribute("title", "site da rockseat");
 
-    boxElement.style.wigth = 100;
-    boxElement.style.height = 100;
-    boxElement.style.backgroundColor = "#F00";
+      textElement = document.createTextNode("acessar site da rockseat");
+      linkElement.appendChild(textElement);
+
+      var containerElement = document.querySelector("#app");
+      containerElement.appendChild(linkElement);
+
+      var inputElement = document.querySelector("#nome");
+      containerElement.removeChild(inputElement);
         
         </script>
     </body>
