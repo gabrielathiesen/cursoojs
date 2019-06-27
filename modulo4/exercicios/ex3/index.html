@@ -30,7 +30,9 @@
         listElement.innerHTML = "";
       var textElement = document.createTextNode('Erro!');
       var errorElement = document.createElement('li');
-     
+      errorElement.style.color = "#A10";
+      errorElement.appendChild(textElement);
+      listElement.appendChild(errorElement);
     }
 
     </script>
